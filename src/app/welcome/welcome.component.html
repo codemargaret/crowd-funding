@@ -4,16 +4,24 @@
   <div class="row">
     <div class="col-md-4">
       <h3><a routerLink="art">Visual Arts</a></h3>
-      <div *ngFor="let project of projects | async">
-        <h4>{{project.title}}</h4>
-        <h4>{{project.details}}</h4>
+      <div *ngFor="let project of projects | async | art">
+        <h4><em>{{project.title}}</em></h4>
+        <p>{{project.details}}</p>
       </div>
     </div>
     <div class="col-md-4">
       <h3><a routerLink="film">Film and Theater</a></h3>
+      <div *ngFor="let project of projects | async | film">
+        <h4><em>{{project.title}}</em></h4>
+        <p>{{project.details}}</p>
+      </div>
     </div>
     <div class="col-md-4">
       <h3><a routerLink="music">Music</a></h3>
+      <div *ngFor="let project of projects | async | music">
+        <h4><em>{{project.title}}</em></h4>
+        <p>{{project.details}}</p>
+      </div>
     </div>
   </div>
 </div>
