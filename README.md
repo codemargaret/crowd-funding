@@ -26,3 +26,38 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Setup the project
+
+1. $ npm install
+2. Go to firebase and create project called "crowd-funding"
+3. click "add firebase to your web app"
+4. create file src/app/api-keys.ts
+5. in src/app/api-keys place this code:
+<code>
+export var masterFirebaseConfig = {
+    apiKey: "xxxx",
+    authDomain: "xxxx.firebaseapp.com",
+    databaseURL: "https://xxxx.firebaseio.com",
+    storageBucket: "xxxx.appspot.com",
+    messagingSenderId: "xxxx"
+  };
+</code>
+  but replace xx's with your api details from firebase (obvi!)
+6. add src/app/api-keys.ts to your gitignore like this:
+<code>
+  #Firebase credentials
+  /src/app/api-keys.ts 
+</code>
+7. visit our Firebase Console once more, select "crowd-funding".
+* select the Database option from the navbar on the left-hand side.
+* find blue navbar reading Realtime Database. Below this, select the option that reads RULES.
+* Change both the ".read", and ".write" properties here to "true", like this:
+<code>
+{
+  "rules": {
+    ".read": "true",
+    ".write": "true"
+  }
+}
+</code>
