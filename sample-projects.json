@@ -1,0 +1,17 @@
+{ "projects": [{
+    "title": "Spice World 2",
+    "details": "Everone's favorite 90's pop sensation is back! Ginger Spice (Geri Halliwell) is pursuing her second career as a surgeon. Believe it or not, there's drama at the hospital! All the girls are going to have to come together to help her pull her elite surgical team together in time to save the govenor's son who needs an emergency butt transplant.",
+    "fundingGoal": 6000,
+    "category": "Film"
+  }, {
+    "title": "Body Mixup",
+    "details": "A very talented young artist is going to create a poignant mixed-media commentary on body image in today's society with vibrant pictures of body parts composed of other body parts. Her opus will feature eyes made of teeth, noses made of fingers, and butts made of hair. Ginger Spice might be in some of them.",
+    "fundingGoal": 10000,
+    "category": "Art"
+  }, {
+    "title": "Jammin' With Ginger",
+    "details": "Geri Halliwell's amazing reggaeton album. 'Nuff Said. Stretch goals include a music video featuring many butts.",
+    "fundingGoal": 10000,
+    "category": "Music"
+  }]
+}
