@@ -12,6 +12,7 @@ import { FilmComponent } from './film/film.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { ArtPipe } from './art.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -26,7 +27,8 @@ export const firebaseConfig = {
     WelcomeComponent,
     ArtComponent,
     MusicComponent,
-    FilmComponent
+    FilmComponent,
+    ArtPipe
   ],
   imports: [
     BrowserModule,
