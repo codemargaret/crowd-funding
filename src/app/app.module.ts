@@ -16,6 +16,7 @@ import { ArtPipe } from './art.pipe';
 import { FilmPipe } from './film.pipe';
 import { MusicPipe } from './music.pipe';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
+import { AdminComponent } from './admin/admin.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -35,6 +36,7 @@ export const firebaseConfig = {
     FilmPipe,
     MusicPipe,
     ProjectDetailComponent,
+    AdminComponent,
   ],
   imports: [
     BrowserModule,

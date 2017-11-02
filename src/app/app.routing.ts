@@ -5,6 +5,7 @@ import { ArtComponent } from './art/art.component';
 import { FilmComponent } from './film/film.component';
 import { MusicComponent } from './music/music.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
+import { AdminComponent } from './admin/admin.component';
 
 const appRoutes: Routes = [
   {
@@ -24,8 +25,12 @@ const appRoutes: Routes = [
     component: MusicComponent
   },
   {
-  path: 'projects/:id',
-  component: ProjectDetailComponent
+    path: 'projects/:id',
+    component: ProjectDetailComponent
+  },
+  {
+    path: 'admin',
+    component: AdminComponent
   }
 ];
 

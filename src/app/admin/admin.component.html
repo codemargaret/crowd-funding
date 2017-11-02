@@ -1,0 +1,42 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add New Project to F.A.R.T.S.</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Project Title:</label>
+        <br>
+        <input #newTitle>
+      </div>
+
+      <div>
+        <label>Project Details:</label>
+        <br>
+        <textarea #newDetails></textarea>
+      </div>
+
+      <div>
+        <label>Funding Goal:</label>
+        <br>
+        <input type="number" #newFundingGoal>
+      </div>
+
+      <div>
+        <label>Category</label>
+        <br>
+        <select name="selectCategory" #newCategory>
+          <option value="Art">Visual Arts</option>
+          <option value="Music">Music</option>
+          <option value="Film">Film and Theater</option>
+        </select>
+      </div>
+
+      <button (click)="submitForm(newTitle.value, newDetails.value, newFundingGoal.value, newCategory.value); newTitle.value=''; newDetails.value=''; newFundingGoal.value=''">Add</button>
+    </div>
+  </div>
+</div>
+
+<div>
+  <app-welcome></app-welcome>
+</div>
