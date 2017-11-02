@@ -14,6 +14,9 @@ import { FirebaseListObservable } from 'angularfire2/database';
 })
 export class FilmComponent implements OnInit {
   projects: FirebaseListObservable<any[]>;
+
+  currentRoute: string = this.router.url;
+
   constructor(private router: Router, private projectService: ProjectService) { }
 
 
@@ -21,4 +24,8 @@ export class FilmComponent implements OnInit {
   ngOnInit() {
     this.projects = this.projectService.getProjects();
   }
+
+  goToDetailPage(clickedProject) {
+    this.router.navigate(['projects', clickedProject.$key]);
+  };
 }

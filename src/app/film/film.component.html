@@ -1,4 +1,4 @@
 <div *ngFor="let project of projects | async | film">
-  <h4><em>{{project.title}}</em></h4>
+  <h4 (click)="goToDetailPage(project)"><em>{{project.title}}</em></h4>
   <p>{{project.details}}</p>
 </div>
