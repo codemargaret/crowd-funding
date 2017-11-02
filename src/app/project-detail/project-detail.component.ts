@@ -15,6 +15,7 @@ import { FirebaseObjectObservable } from 'angularfire2/database';
 export class ProjectDetailComponent implements OnInit {
   projectId: string;
   projectToDisplay;
+
   constructor(
     private route: ActivatedRoute,
     private location: Location,
