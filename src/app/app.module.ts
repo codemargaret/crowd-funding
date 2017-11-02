@@ -15,6 +15,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { ArtPipe } from './art.pipe';
 import { FilmPipe } from './film.pipe';
 import { MusicPipe } from './music.pipe';
+import { ProjectDetailComponent } from './project-detail/project-detail.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -33,6 +34,7 @@ export const firebaseConfig = {
     ArtPipe,
     FilmPipe,
     MusicPipe,
+    ProjectDetailComponent,
   ],
   imports: [
     BrowserModule,
